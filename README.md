@@ -16,6 +16,8 @@ This is another Javascript project. A simple but elegant stopwatch.
 
 ## License
 
+[![NPM](https://img.shields.io/apm/l/NPM)](https://github.com/JailsonPLima/Stopwatch/blob/main/LICENSE)
+
 ## Author
 
 [@JailsonPLima](https://github.com/JailsonPLima)
