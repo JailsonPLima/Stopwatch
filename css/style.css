@@ -1,0 +1,89 @@
+:root {
+  --fontPoppins: "Poppins", sans-serif;
+  --blackFontColor: #111111;
+  --whiteFontColor: #ffffff;
+  --btnBg: #6c63ff;
+  --btnBgDisable: #a6a6a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontPoppins);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+.imagem {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.imagem img {
+  width: 100%;
+}
+
+.relogio {
+  font-size: 4.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: var(--blackFontColor);
+}
+.relogio__item {
+  width: 100px;
+}
+
+.botoes {
+  margin-top: 20px;
+  text-align: center;
+}
+.botoes button {
+  display: inline-block;
+  font-family: var(--fontPoppins);
+  font-size: 1.2rem;
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+  color: var(--whiteFontColor);
+  background-color: var(--btnBg);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 300ms;
+}
+.botoes button:not(:disabled):hover {
+  opacity: 0.8;
+}
+.botoes button:not(:last-child) {
+  margin-right: 15px;
+}
+.botoes button:disabled {
+  background-color: var(--btnBgDisable);
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 418px) {
+  .relogio {
+    font-size: 3.2rem;
+  }
+  .relogio__item {
+    width: 70px;
+  }
+
+  .botoes button {
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
